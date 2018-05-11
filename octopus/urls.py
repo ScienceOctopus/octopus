@@ -20,7 +20,7 @@ from octopus.views import HypothesisListView, HypothesisCreate, HypothesisUpdate
 
 
 urlpatterns = [
-    url(r'', PrototypeView.as_view()),
+    url(r'^', PrototypeView.as_view()),
     url(r'^hypothesis/', HypothesisListView.as_view()),
     url(r'^hypothesis/add/$', HypothesisCreate.as_view(), name='hypothesis-add'),
     url(r'^hypothesis/(?P<pk>[0-9]+)/$', HypothesisUpdate.as_view(), name='hypothesis-update'),

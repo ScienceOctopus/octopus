@@ -1,4 +1,5 @@
 {% load static %}
+{% load ratings %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,18 @@
 
 </head>
 <body>
-{% include 'octopus/comments.html' %}
+
+<div id="hypothesis">
+    {{ hypothesis.name }}
+    {{ hypothesis.text }}
+</div>
+{% for comment in comments %}
+    {{ comment.name }}
+    <br/>
+    {{ comment.text }}
+    <br/>
+    {% ratings comment %}
+
+{% endfor %}
 </body>
 </html>

@@ -21,7 +21,7 @@ class PrototypeView(View):
             'base_template.html',
             context={
                 'comments' : Comment.objects.order_by('-id'),
-                'hypotheses' : Hypothesis.objects.all()
+                'hypothesis' : Hypothesis.objects.first()
             }
         )
 
