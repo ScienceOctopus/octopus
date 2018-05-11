@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<div class="container" style="padding-top: 1em;">
+<div class="container" style="padding-top: 1em; margin-bottom: 1em;">
     <div class="row">
     <div class="col-md-8">
         <div id="hypothesis">
@@ -25,7 +25,19 @@
             <h1>{{ hypothesis.name }}</h1>
             <p><strong>Alex Freeman, Hannah Drury</strong></p>
             <p><strong>Hypothesis ID: </strong>OCTOHYP23435 &nbsp; &nbsp; <strong>Hypothesis version: 1</strong></p>
-            <div class="hypothesis-description">{{ hypothesis.text }}</div>
+            <div class="hypothesis-description border-box">{{ hypothesis.text }}</div>
+        </div>
+
+        <div class="border-box" style="margin-top: 2em;">
+            <h2>Submit a review. Be fair and gentle.</h2>
+            <form action="/" method="post">
+                <div class="form-group">
+                    {% csrf_token %}
+                    <label for="id_name">Your name:</label><input type="text" name="name" required="" id="id_name" maxlength="200" class="form-control">
+                    <label for="id_text">Review:</label><textarea name="text" id="id_text" rows="10" cols="40" required="" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
 

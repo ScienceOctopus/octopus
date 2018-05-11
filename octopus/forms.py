@@ -1,4 +1,8 @@
-class AuthorForm(ModelForm):
+from octopus.models import Comment
+from django.forms import ModelForm
+
+
+class CommentForm(ModelForm):
     class Meta:
-        model = Author
-        fields = ['name', 'title', 'birth_date']
+        model = Comment
+        fields = ['name', 'text']
