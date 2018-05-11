@@ -13,6 +13,9 @@
     <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
 
     <link rel="stylesheet" href="{% static 'octopus.css' %}">
+    <script type="text/javascript" src="{% static 'aws-sdk-2.238.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jquery-3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'octopus.js' %}"></script>
 
 </head>
 <body>
@@ -21,22 +24,28 @@
     <div class="row">
     <div class="col-md-8">
         <div id="hypothesis">
-            <span class="text-muted">&lt; Multiple Sclerosis - Stopping disease progression</span>
-            <h1>{{ hypothesis.name }}</h1>
+            <span class="text-muted translate">&lt; Multiple Sclerosis - Stopping disease progression</span>
+            <div class="row">
+                <div class="col-md-8">
+                <h1 class="translate">{{ hypothesis.name }}</h1>
+                </div>
+                <div class="col-md-2"><a href="/"><img id="ukflag" src="/static/uk-flag.png" style="height: 40px"/></a></div>
+                <div class="col-md-2"><img id="deflag" src="/static/de-flag.png" style="height: 40px"/></div>
+            </div>
             <p><strong>Alex Freeman, Hannah Drury</strong></p>
             <p><strong>Hypothesis ID: </strong>OCTOHYP23435 &nbsp; &nbsp; <strong>Hypothesis version: 1</strong></p>
-            <div class="hypothesis-description border-box">{{ hypothesis.text }}</div>
+            <div class="hypothesis-description border-box translate">{{ hypothesis.text }}</div>
         </div>
 
         <div class="border-box" style="margin-top: 2em;">
-            <h2>Submit a review. Be fair and gentle.</h2>
+            <h2 class="translate">Submit a review. Be fair and gentle.</h2>
             <form action="/" method="post">
                 <div class="form-group">
                     {% csrf_token %}
-                    <label for="id_name">Your name:</label><input type="text" name="name" required="" id="id_name" maxlength="200" class="form-control">
-                    <label for="id_text">Review:</label><textarea name="text" id="id_text" rows="10" cols="40" required="" class="form-control"></textarea>
+                    <label for="id_name" class="translate">Your name:</label><input type="text" name="name" required="" id="id_name" maxlength="200" class="form-control">
+                    <label for="id_text" class="translate">Review:</label><textarea name="text" id="id_text" rows="10" cols="40" required="" class="form-control"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary translate">Submit</button>
             </form>
         </div>
     </div>
@@ -44,9 +53,9 @@
     <div class="col-md-4">
         <h2>Rating</h2>
         {% for comment in comments %}
-            {{ comment.name }}
+            <span class="translate">{{ comment.name }}</span>
             <br/>
-            {{ comment.text }}
+            <span class="translate">{{ comment.text }}</span>
             <br/>
             {% ratings comment %}
 
