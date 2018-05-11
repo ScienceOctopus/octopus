@@ -1,0 +1,10 @@
+{% load ratings %}
+
+{% for comment in comments %}
+    {{ comment.name }}
+    <br/>
+    {{ comment.text }}
+    <br/>
+        {% ratings comment %}
+
+{% endfor %}

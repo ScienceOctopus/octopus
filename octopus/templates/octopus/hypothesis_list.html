@@ -1,0 +1,10 @@
+{% load ratings %}
+
+<h1></h1>
+<ul>
+{% for hypothesis in object_list %}
+    <li>{{ hypothesis.pub_date|date }} - {{ hypothesis.text }}</li>
+{% empty %}
+    <li>No hypothesis yet.</li>
+{% endfor %}
+</ul>
