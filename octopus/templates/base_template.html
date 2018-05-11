@@ -5,25 +5,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Octopus Publishing Platform</title>
+
+    <link rel="stylesheet" href="{% static 'bootstrap-4.1.1-bootswatch-minty.css' %}">
 
     <link rel="stylesheet" href="{% static 'star-ratings/css/star-ratings.css' %}">
     <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
 
+    <link rel="stylesheet" href="{% static 'octopus.css' %}">
+
 </head>
 <body>
 
-<div id="hypothesis">
-    {{ hypothesis.name }}
-    {{ hypothesis.text }}
-</div>
-{% for comment in comments %}
-    {{ comment.name }}
-    <br/>
-    {{ comment.text }}
-    <br/>
-    {% ratings comment %}
+<div class="container" style="padding-top: 1em;">
+    <div class="row">
+    <div class="col-md-8">
+        <div id="hypothesis">
+            <span class="text-muted">&lt; Multiple Sclerosis - Stopping disease progression</span>
+            <h1>{{ hypothesis.name }}</h1>
+            <p><strong>Alex Freeman, Hannah Drury</strong></p>
+            <p><strong>Hypothesis ID: </strong>OCTOHYP23435 &nbsp; &nbsp; <strong>Hypothesis version: 1</strong></p>
+            <div class="hypothesis-description">{{ hypothesis.text }}</div>
+        </div>
+    </div>
 
-{% endfor %}
+    <div class="col-md-4">
+        <h2>Rating</h2>
+        {% for comment in comments %}
+            {{ comment.name }}
+            <br/>
+            {{ comment.text }}
+            <br/>
+            {% ratings comment %}
+
+        {% endfor %}
+    </div>
+    </div>
+</div>
 </body>
 </html>
