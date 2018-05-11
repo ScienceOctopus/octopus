@@ -1,166 +1,5 @@
 [
 {
-  "model": "contenttypes.contenttype",
-  "pk": 1,
-  "fields": {
-    "app_label": "admin",
-    "model": "logentry"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 2,
-  "fields": {
-    "app_label": "auth",
-    "model": "group"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 3,
-  "fields": {
-    "app_label": "auth",
-    "model": "permission"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 4,
-  "fields": {
-    "app_label": "auth",
-    "model": "user"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 5,
-  "fields": {
-    "app_label": "contenttypes",
-    "model": "contenttype"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 6,
-  "fields": {
-    "app_label": "sessions",
-    "model": "session"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 7,
-  "fields": {
-    "app_label": "octopus",
-    "model": "hypothesis"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 8,
-  "fields": {
-    "app_label": "octopus",
-    "model": "comment"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 9,
-  "fields": {
-    "app_label": "star_ratings",
-    "model": "userrating"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 10,
-  "fields": {
-    "app_label": "star_ratings",
-    "model": "rating"
-  }
-},
-{
-  "model": "sessions.session",
-  "pk": "wh0mpyhtd0cdeoe2u7h7fufgfcpbm2vp",
-  "fields": {
-    "session_data": "ZDgxYjQ5ZGQ5NzBlMzkwMDM3NTkzOTgxOGIxOTc1NGU1OWIxY2Y1OTp7Il9hdXRoX3VzZXJfaGFzaCI6IjdhYTU3OGI3NDE4NzE3NmE2N2IyYmFhODc1ZDk2MWJhZThhNDNjMzciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
-    "expire_date": "2018-05-24T13:42:08.378Z"
-  }
-},
-{
-  "model": "octopus.hypothesis",
-  "pk": 1,
-  "fields": {
-    "text": "Multiple sclerosis is an autoimmune neurodegenerative disease where the myelin sheath (the coating around nerves) is destroyed. While there has been huge success in developing therapies that dampen the initial injury and help with symptoms, there are no currently approved therapies to stop disease progression.  Generally, disease progression occurs when the neuron becomes \u2018bare\u2019 (without myelin) and subsequently degenerates. There are several groups working on potential avenues for stopping disease progression.",
-    "name": "Hypothesis 1",
-    "created": "2018-05-10T15:37:45.329Z",
-    "modified": "2018-05-10T15:37:45.329Z"
-  }
-},
-{
-  "model": "octopus.comment",
-  "pk": 1,
-  "fields": {
-    "text": "This is a review from a user. It says that they think the hypothesis is great, but that some modifications would help. They think it is very ambitious",
-    "name": "Marie Curie",
-    "created": "2018-05-10T19:02:23.783Z",
-    "modified": "2018-05-10T19:02:23.783Z"
-  }
-},
-{
-  "model": "octopus.comment",
-  "pk": 2,
-  "fields": {
-    "text": "This is a comment from a user. It says that they think the hypothesis is great, but that some modifications would help. They think it is very ambitious.",
-    "name": "Louis Pasteur",
-    "created": "2018-05-10T19:03:05.507Z",
-    "modified": "2018-05-10T19:03:05.507Z"
-  }
-},
-{
-  "model": "octopus.comment",
-  "pk": 3,
-  "fields": {
-    "text": "This is a comment from a user. It says that they think the hypothesis is great, but that some modifications would help. They think it is very ambitious",
-    "name": "Feng Zhang",
-    "created": "2018-05-10T19:03:39.239Z",
-    "modified": "2018-05-10T19:03:39.239Z"
-  }
-},
-{
-  "model": "star_ratings.rating",
-  "pk": 1,
-  "fields": {
-    "count": 1,
-    "total": 2,
-    "average": "2.000",
-    "content_type": 8,
-    "object_id": 3
-  }
-},
-{
-  "model": "star_ratings.rating",
-  "pk": 2,
-  "fields": {
-    "count": 1,
-    "total": 5,
-    "average": "5.000",
-    "content_type": 8,
-    "object_id": 2
-  }
-},
-{
-  "model": "star_ratings.rating",
-  "pk": 3,
-  "fields": {
-    "count": 1,
-    "total": 3,
-    "average": "3.000",
-    "content_type": 8,
-    "object_id": 1
-  }
-},
-{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -446,6 +285,87 @@
     "date_joined": "2018-05-10T13:41:30.802Z",
     "groups": [],
     "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "wh0mpyhtd0cdeoe2u7h7fufgfcpbm2vp",
+  "fields": {
+    "session_data": "ZDgxYjQ5ZGQ5NzBlMzkwMDM3NTkzOTgxOGIxOTc1NGU1OWIxY2Y1OTp7Il9hdXRoX3VzZXJfaGFzaCI6IjdhYTU3OGI3NDE4NzE3NmE2N2IyYmFhODc1ZDk2MWJhZThhNDNjMzciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
+    "expire_date": "2018-05-24T13:42:08.378Z"
+  }
+},
+{
+  "model": "octopus.hypothesis",
+  "pk": 1,
+  "fields": {
+    "text": "Multiple sclerosis is an autoimmune neurodegenerative disease where the myelin sheath (the coating around nerves) is destroyed. While there has been huge success in developing therapies that dampen the initial injury and help with symptoms, there are no currently approved therapies to stop disease progression.  Generally, disease progression occurs when the neuron becomes \u2018bare\u2019 (without myelin) and subsequently degenerates. There are several groups working on potential avenues for stopping disease progression.",
+    "name": "Hypothesis 1",
+    "created": "2018-05-10T15:37:45.329Z",
+    "modified": "2018-05-10T15:37:45.329Z"
+  }
+},
+{
+  "model": "octopus.comment",
+  "pk": 1,
+  "fields": {
+    "text": "This is a review from a user. It says that they think the hypothesis is great, but that some modifications would help. They think it is very ambitious",
+    "name": "Marie Curie",
+    "created": "2018-05-10T19:02:23.783Z",
+    "modified": "2018-05-10T19:02:23.783Z"
+  }
+},
+{
+  "model": "octopus.comment",
+  "pk": 2,
+  "fields": {
+    "text": "This is a comment from a user. It says that they think the hypothesis is great, but that some modifications would help. They think it is very ambitious.",
+    "name": "Louis Pasteur",
+    "created": "2018-05-10T19:03:05.507Z",
+    "modified": "2018-05-10T19:03:05.507Z"
+  }
+},
+{
+  "model": "octopus.comment",
+  "pk": 3,
+  "fields": {
+    "text": "This is a comment from a user. It says that they think the hypothesis is great, but that some modifications would help. They think it is very ambitious",
+    "name": "Feng Zhang",
+    "created": "2018-05-10T19:03:39.239Z",
+    "modified": "2018-05-10T19:03:39.239Z"
+  }
+},
+{
+  "model": "star_ratings.rating",
+  "pk": 1,
+  "fields": {
+    "count": 1,
+    "total": 2,
+    "average": "2.000",
+    "content_type": 8,
+    "object_id": 3
+  }
+},
+{
+  "model": "star_ratings.rating",
+  "pk": 2,
+  "fields": {
+    "count": 1,
+    "total": 5,
+    "average": "5.000",
+    "content_type": 8,
+    "object_id": 2
+  }
+},
+{
+  "model": "star_ratings.rating",
+  "pk": 3,
+  "fields": {
+    "count": 1,
+    "total": 3,
+    "average": "3.000",
+    "content_type": 8,
+    "object_id": 1
   }
 },
 {
