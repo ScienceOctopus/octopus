@@ -1,6 +1,6 @@
 # Project Octopus
 
-To find out more about Project Octopus, start with the Documentations folder. The Website folder contains the public-facing information. This folder contains the code for working versions of parts of the site. All help creating working versions of the site are very welcome. If you'd liek to contribute, please contact alex.freeman@maths.cam.ac.uk
+To find out more about Project Octopus, start with the Documentations folder. The Website folder contains the public-facing information. This folder contains the code for working versions of parts of the site. All help creating working versions of the site are very welcome. If you'd like to contribute, please contact alex.freeman@maths.cam.ac.uk
 
 
 # Installation instructions
